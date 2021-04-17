@@ -3,13 +3,13 @@
   <display-name>GadgetBadget</display-name>
   
     <servlet>
- <servlet-name>Jersey Web Application</servlet-name>
+ <servlet-name>project servlet</servlet-name>
  <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
  <load-on-startup>1</load-on-startup>
 </servlet>
 <servlet-mapping>
- <servlet-name>Jersey Web Application</servlet-name>
- <url-pattern>default</url-pattern>
+ <servlet-name>project servlet</servlet-name>
+ <url-pattern>/project</url-pattern>
 </servlet-mapping>
   
   <welcome-file-list>
