@@ -105,6 +105,7 @@ public String displayProject()
  return output; 
  } 
 
+//Update Details 
 public String updateProject (String projectid, String name, String category, String estcost, String esttime) 
 { 
  String output = ""; 
@@ -136,7 +137,7 @@ public String updateProject (String projectid, String name, String category, Str
  return output; 
  } 
 
-
+//Delete details
 public String deleteProject(String projectid) 
  { 
  String output = ""; 
