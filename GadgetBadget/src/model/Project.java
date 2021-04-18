@@ -2,7 +2,7 @@ package model;
 import java.sql.*; 
 
 public class Project {
-
+    //Create Data Base Connection
 	private Connection connect() 
 	 { 
 	 Connection con = null; 
@@ -16,7 +16,7 @@ public class Project {
 	 {e.printStackTrace();} 
 	 return con; 
 	 } 
-	
+//Insert Details 	
 public String insertProject (String name, String category, String estcost, String esttime) 
 
 { 
@@ -50,7 +50,7 @@ if (con == null)
  return output; 
  } 
 
-
+//Display Details 
 public String displayProject()
 
 { 
