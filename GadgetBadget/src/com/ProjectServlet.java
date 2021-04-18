@@ -16,7 +16,7 @@ public class ProjectServlet {
 @Path("/") 
 @Produces(MediaType.TEXT_HTML) 
 public String readItems() 
- {     
+ {     //test
  return projectObj.displayProject(); 
  } 
 
