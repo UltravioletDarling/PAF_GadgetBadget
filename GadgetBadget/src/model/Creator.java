@@ -28,7 +28,7 @@ Connection con = connect();
 if (con == null) 
 {return "Connection Error"; } 
 
- String query = " insert into creator(`creatorid`,`fullname`,`city`,`contactnum`,`email`,'fieldofinterest','currentbudget')"
+ String query = " insert into creator(`creatorid`,`fullname`,`city`,`contactnum`,`email`,`fieldofinterest`,`currentbudget`)"
  + " values (?, ?, ?, ?, ?,?,?)"; 
  PreparedStatement preparedStmt = con.prepareStatement(query); 
 
@@ -47,7 +47,7 @@ if (con == null)
  } 
  catch (Exception e) 
  { 
- output = "Could not a creator"; 
+ output = "Could not insert"; 
  System.err.println(e.getMessage()); 
  } 
  return output; 
