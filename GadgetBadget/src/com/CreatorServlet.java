@@ -54,7 +54,7 @@ public String updateCreator(String creatorinfo)
  String budget = creatorObject.get("esttime").getAsString(); 
  String output = creatorObj.updateCreator(creatorid, name, city, contactnum, email, fieldofinterst, budget); 
 return output;
-}
+} //test
 
 @DELETE
 @Path("/") 
