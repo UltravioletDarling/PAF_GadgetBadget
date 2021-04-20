@@ -32,6 +32,16 @@
  <servlet-name>Progress Web Application</servlet-name>
  <url-pattern>/progressServices/*</url-pattern>
 </servlet-mapping>
+
+ <servlet>
+ <servlet-name>customer payment</servlet-name>
+ <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+ <load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+ <servlet-name>customer payment</servlet-name>
+ <url-pattern>/customerPaymentServlet/*</url-pattern>
+</servlet-mapping>  
   
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
