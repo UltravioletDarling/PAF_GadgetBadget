@@ -134,28 +134,30 @@ public class research {
 	
 	public String deleteResearch(String researchID)
 	 {
-	 String output = "";
-	 try
-	 {
-	 Connection con = connect();
-	 if (con == null)
-	 {return "Error while connecting to the database for deleting."; }
-	 // create a prepared statement
-	 String query = "delete from research where  researchID=?";
-	 PreparedStatement preparedStmt = con.prepareStatement(query);
-	 // binding values
-	 preparedStmt.setInt(1, Integer.parseInt(researchID));
-	 // execute the statement
-	 preparedStmt.execute();
-	 con.close();
-	 output = "Deleted successfully";
-	 }
-	 catch (Exception e)
-	 {
-	 output = "Error while deleting the research.";
-	 System.err.println(e.getMessage());
-	 }
-	 return output;
+		 String output = "";
+		 try
+		 {
+		 Connection con = connect();
+		 if (con == null)
+		 {return "Error while connecting to the database for deleting."; }
+		 
+		 // create a prepared statement
+		 String query = "delete from research where  researchID=?";
+		 PreparedStatement preparedStmt = con.prepareStatement(query);
+		 
+		 // binding values
+		 preparedStmt.setInt(1, Integer.parseInt(researchID));
+		 // execute the statement
+		 preparedStmt.execute();
+		 con.close();
+		 output = "Deleted successfully";
+		 }
+		 catch (Exception e)
+		 {
+		 output = "Error while deleting the research.";
+		 System.err.println(e.getMessage());
+		 }
+		 return output;
 	 }
 	
 
