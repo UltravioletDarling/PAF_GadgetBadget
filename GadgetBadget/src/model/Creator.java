@@ -125,7 +125,7 @@ public String updateCreator (String creatorid, String name, String city, String 
  if (con == null) 
  {return "Error accessing the database"; } 
 
- String query = "UPDATE creator SET creatorid=?,fullname=?,city=?,contactnum=?,email=?,fieldofinterest=?,currentbudget=?  WHERE creatorid=?"; 
+ String query = "UPDATE creator SET fullname=?,city=?,contactnum=?,email=?,fieldofinterest=?,currentbudget=?  WHERE creatorid=?"; 
  PreparedStatement preparedStmt = con.prepareStatement(query); 
 
  preparedStmt.setString(1, name); 
@@ -134,6 +134,7 @@ public String updateCreator (String creatorid, String name, String city, String 
  preparedStmt.setString(4, email); 
  preparedStmt.setString(5, fieldofinterst); 
  preparedStmt.setDouble(6, Double.parseDouble(budget)); 
+ preparedStmt.setInt(7, Integer.parseInt(creatorid));
  
  preparedStmt.execute(); 
  con.close(); 
