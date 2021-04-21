@@ -42,7 +42,7 @@ return output;
 @Produces(MediaType.TEXT_PLAIN) 
 public String updateCreator(String creatorinfo) 
 { 
-
+//test
  JsonObject creatorObject = new JsonParser().parse(creatorinfo).getAsJsonObject(); 
  
  String creatorid = creatorObject.get("creatorid").getAsString(); 
