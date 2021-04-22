@@ -21,7 +21,7 @@ public class progressServices {
 	@GET
 	@Path("/")
 	@Produces(MediaType.TEXT_HTML) 
-	public String readProgress()  //Read Progress 
+	public String readProgress()  //Read Progress Details
 	 {
 		 return PObj.readProgress(); 
 	 } 
@@ -32,7 +32,7 @@ public class progressServices {
 	@Path("/") 
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED) 
 	@Produces(MediaType.TEXT_PLAIN) 
-	public String insertProgress(@FormParam("researchName") String researchName,  //Insert Progress
+	public String insertProgress(@FormParam("researchName") String researchName,  //Insert Progress Details
 	 @FormParam("progress") String progress) 
 	
 	{ 
@@ -46,7 +46,7 @@ public class progressServices {
 	@Path("/") 
 	@Consumes(MediaType.APPLICATION_JSON) 
 	@Produces(MediaType.TEXT_PLAIN) 
-	public String updateProgress(String progressData)  //Update Progress
+	public String updateProgress(String progressData)  //Update Progress Details
 	{ 
 	//Convert the input string to a JSON object 
 	 JsonObject PObject = new JsonParser().parse(progressData).getAsJsonObject(); 
@@ -64,7 +64,7 @@ public class progressServices {
 	@Path("/") 
 	@Consumes(MediaType.APPLICATION_XML) 
 	@Produces(MediaType.TEXT_PLAIN) 
-	public String deleteProgress(String progressData)  //Delete Progress
+	public String deleteProgress(String progressData)  //Delete Progress Details
 	{ 
 	//Convert the input string to an XML document
 	 Document doc = Jsoup.parse(progressData, "", Parser.xmlParser()); 
