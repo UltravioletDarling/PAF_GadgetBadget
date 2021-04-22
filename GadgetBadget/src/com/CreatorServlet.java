@@ -42,16 +42,16 @@ return output;
 @Produces(MediaType.TEXT_PLAIN) 
 public String updateCreator(String creatorinfo) 
 { 
-
+//test
  JsonObject creatorObject = new JsonParser().parse(creatorinfo).getAsJsonObject(); 
  
- String creatorid = creatorObject.get("projectid").getAsString(); 
- String name = creatorObject.get("name").getAsString(); 
- String city = creatorObject.get("category").getAsString(); 
- String contactnum = creatorObject.get("estcost").getAsString(); 
- String email = creatorObject.get("esttime").getAsString(); 
- String fieldofinterst =creatorObject.get("esttime").getAsString(); 
- String budget = creatorObject.get("esttime").getAsString(); 
+ String creatorid = creatorObject.get("creatorid").getAsString(); 
+ String name = creatorObject.get("fullname").getAsString(); 
+ String city = creatorObject.get("city").getAsString(); 
+ String contactnum = creatorObject.get("contactnum").getAsString(); 
+ String email = creatorObject.get("email").getAsString(); 
+ String fieldofinterst =creatorObject.get("fieldofinterest").getAsString(); 
+ String budget = creatorObject.get("currentbudget").getAsString(); 
  String output = creatorObj.updateCreator(creatorid, name, city, contactnum, email, fieldofinterst, budget); 
 return output;
 } //test

@@ -3,7 +3,7 @@ import java.sql.*;
 
 public class customerPayment {
 	
-	//database connectivity
+	//database connectivity method
 	private Connection connect()
 	 {
 	 Connection con = null;
@@ -11,7 +11,7 @@ public class customerPayment {
 	 {
 		 Class.forName("com.mysql.jdbc.Driver"); 
 
-	     //Provide the correct details: DBServer/DBName, username, password
+	     //connection to the DB
 	     con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/gadgetbadget", "root", "abc123"); 
 	 }
 	 catch (Exception e)
@@ -74,6 +74,7 @@ public class customerPayment {
 		 "<th>Cvv</th>" +
 		 "<th>Update</th><th>Remove</th></tr>";
 	
+		 //sql query
 		 String query = "select * from customer_payment";
 		 Statement stmt = con.createStatement();
 		 ResultSet rs = stmt.executeQuery(query);
@@ -105,18 +106,18 @@ public class customerPayment {
 		 
 		 con.close();
 		 
-		 // Complete the html table
+		 // Complete the html table //end
 		 output += "</table>";
 		 }
 		 	catch (Exception e)
 		 {
-		 output = "Error while reading the customer payment details.";
+		 output = "Error while viewing the customer payment details.";
 		 	System.err.println(e.getMessage());
 		 }
 		 return output;
 	 }
 	
-	//Update customer payment details
+	//Update customer payment details method
 	
 	public String updateCusPayment (String cardId, String cardNo, String nameonCard, String expDate, String cvv) 
 	{ 
@@ -128,6 +129,7 @@ public class customerPayment {
 	 if (con == null) 
 	 {return "Error accessing the database"; } 
 
+	 //query
 	 String query = "UPDATE customer_payment SET Card_No=?,Name_on_card=?,Exp_date=?,Cvv=?  WHERE Card_Id=?"; 
 	 PreparedStatement preparedStmt = con.prepareStatement(query); 
 
@@ -145,13 +147,13 @@ public class customerPayment {
 	 } 
 	 catch (Exception e) 
 	 { 
-	 output = "Fail to update"; 
+	 output = "Update Fail"; 
 	 System.err.println(e.getMessage()); 
 	 } 
 	 return output; 
 	 } 
 	
-	//delete customer payment details
+	//delete customer payment details method
 	
 	public String deleteCusPayment(String Card_Id) 
 	 { 
@@ -161,7 +163,7 @@ public class customerPayment {
 	 { 
 	 Connection con = connect(); 
 	 if (con == null) 
-	 {return "Error accessing the database"; } 
+	 {return "Error accessing to the database"; } 
 
 	 String query = "delete from customer_payment where Card_Id=?"; 
 	 
@@ -176,7 +178,7 @@ public class customerPayment {
 	 } 
 	 catch (Exception e) 
 	 { 
-	 output = "Could not delete the project"; 
+	 output = "Could not delete the customer payment detail"; 
 	 System.err.println(e.getMessage()); 
 	 } 
 	 return output; 

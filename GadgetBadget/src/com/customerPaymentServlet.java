@@ -17,6 +17,8 @@ import org.jsoup.nodes.Document;
 	public class customerPaymentServlet {
 		
 	customerPayment paymentObj = new customerPayment();
+	
+	//view
 	@GET
 	@Path("/") 
 	@Produces(MediaType.TEXT_HTML) 
@@ -60,6 +62,8 @@ import org.jsoup.nodes.Document;
 	return output;
 	}
 
+	
+	//delete
 	@DELETE
 	@Path("/") 
 	@Consumes(MediaType.APPLICATION_XML) 
