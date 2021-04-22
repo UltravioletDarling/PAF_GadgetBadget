@@ -178,7 +178,7 @@ public class customerPayment {
 	 } 
 	 catch (Exception e) 
 	 { 
-	 output = "Could not delete the customer payment detail"; 
+	 output = "Fail to delete the record"; 
 	 System.err.println(e.getMessage()); 
 	 } 
 	 return output; 
