@@ -42,6 +42,16 @@
  <servlet-name>customer payment</servlet-name>
  <url-pattern>/customerPaymentServlet/*</url-pattern>
 </servlet-mapping>  
+
+<servlet>
+ <servlet-name>promotion servlet</servlet-name>
+ <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+ <load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+ <servlet-name>promotion servlet</servlet-name>
+ <url-pattern>/promotion/*</url-pattern>
+</servlet-mapping>
   
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
