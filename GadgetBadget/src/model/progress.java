@@ -124,7 +124,7 @@ public class progress {
 		 }
 		 catch (Exception e)
 		 {
-		 output = "Error while updating the research.";
+		 output = "Error while updating the progress.";
 		 System.err.println(e.getMessage());
 		 }
 		 return output;
