@@ -1,7 +1,7 @@
 package model;
 import java.sql.*;
 
-public class progress {
+public class progress_IT19216256 {
 	
 	private Connection connect()
 	 {

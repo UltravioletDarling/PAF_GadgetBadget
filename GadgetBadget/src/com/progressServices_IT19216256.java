@@ -1,7 +1,7 @@
 package com;
 
-import model.progress;
-import model.research;
+import model.progress_IT19216256;
+import model.research_IT19216256;
 
 //For REST Service
 import javax.ws.rs.*;
@@ -15,9 +15,9 @@ import org.jsoup.nodes.Document;
 @Path("/Progress")
 
 
-public class progressServices {
+public class progressServices_IT19216256 {
 	
-	progress PObj = new progress();
+	progress_IT19216256 PObj = new progress_IT19216256();
 	@GET
 	@Path("/")
 	@Produces(MediaType.TEXT_HTML) 

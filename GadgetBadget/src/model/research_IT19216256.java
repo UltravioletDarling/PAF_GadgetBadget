@@ -3,7 +3,7 @@ package model;
 import java.sql.*;
 
 
-public class research {
+public class research_IT19216256 {
 	
 	
 	private Connection connect()

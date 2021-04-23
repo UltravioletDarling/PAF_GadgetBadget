@@ -1,5 +1,5 @@
 package com;
-import model.research;
+import model.research_IT19216256;
 //For REST Service
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -11,9 +11,9 @@ import org.jsoup.parser.*;
 import org.jsoup.nodes.Document;
 @Path("/Research")
 
-public class researchServices {
+public class researchServices_IT19216256 {
 
-	research RObj = new research();
+	research_IT19216256 RObj = new research_IT19216256();
 	@GET
 	@Path("/")
 	@Produces(MediaType.TEXT_HTML) 
