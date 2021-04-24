@@ -40,7 +40,7 @@
 </servlet>
 <servlet-mapping>
  <servlet-name>customer payment</servlet-name>
- <url-pattern>/customerPaymentServlet/*</url-pattern>
+ <url-pattern>/customerPaymentServlet_it19223322/*</url-pattern>
 </servlet-mapping>  
 
 <servlet>

@@ -5,7 +5,7 @@ package model;
 import java.sql.*;
 
 
-public class customerPayment {
+public class customerPayment_it19223322 {
 	
 	//database connectivity method
 	private Connection connect()
