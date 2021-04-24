@@ -2,7 +2,7 @@
 //K.A.S.J Ranasinghe
 
 package com;
-import model.customerPayment;
+import model.customerPayment_it19223322;
 
 //for REST service
 import javax.ws.rs.*; 
@@ -18,9 +18,9 @@ import org.jsoup.nodes.Document;
 
 	
 	@Path("/customer_payment") 
-	public class customerPaymentServlet {
+	public class customerPaymentServlet_it19223322 {
 		
-	customerPayment paymentObj = new customerPayment();
+	customerPayment_it19223322 paymentObj = new customerPayment_it19223322();
 	
 	//view
 	@GET
