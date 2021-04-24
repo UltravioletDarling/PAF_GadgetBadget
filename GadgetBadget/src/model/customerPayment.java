@@ -1,5 +1,9 @@
+//IT19223322
+//K.A.S.J Ranasinghe
+
 package model;
 import java.sql.*;
+
 
 public class customerPayment {
 	
@@ -12,7 +16,7 @@ public class customerPayment {
 		 Class.forName("com.mysql.jdbc.Driver"); 
 
 	     //connection to the DB
-	     con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/gadgetbadget", "root", "abc123"); 
+	     con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/gadgetbadget", "root", ""); 
 	 }
 	 catch (Exception e)
 	 {e.printStackTrace();}
