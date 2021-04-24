@@ -42,7 +42,7 @@ public class research_IT19216256 {
 
 			preparedStmt.execute();
 			con.close();
-			output = "Inserted successfully";
+			output = "Inserted successfully"; // Display Successful message after insert details
 		} catch (Exception e) {
 			output = "Error while inserting the Research.";
 			System.err.println(e.getMessage());
