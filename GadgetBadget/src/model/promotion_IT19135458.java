@@ -1,9 +1,11 @@
+package model;
+
 
 
 import java.sql.*;
 
 
-public class promotion {
+public class promotion_IT19135458 {
 	
 	
 	private Connection connect()

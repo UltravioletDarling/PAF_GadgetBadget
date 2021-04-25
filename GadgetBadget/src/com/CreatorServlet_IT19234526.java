@@ -1,5 +1,5 @@
 package com;
-import model.Creator; 
+import model.Creator_IT19234526; 
 import javax.ws.rs.*; 
 import javax.ws.rs.core.MediaType; 
 import com.google.gson.*; 
@@ -9,9 +9,9 @@ import org.jsoup.nodes.Document;
 
 
 @Path("/creator") 
-public class CreatorServlet {
+public class CreatorServlet_IT19234526 {
 	
-	Creator creatorObj = new Creator();
+	Creator_IT19234526 creatorObj = new Creator_IT19234526();
 @GET
 @Path("/") 
 @Produces(MediaType.TEXT_HTML) 

@@ -1,6 +1,5 @@
 package com;
-import model.Creator;
-import model.Product; 
+import model.Product_IT19135458;
 import javax.ws.rs.*; 
 import javax.ws.rs.core.MediaType; 
 import com.google.gson.*; 
@@ -9,9 +8,9 @@ import org.jsoup.parser.*;
 import org.jsoup.nodes.Document; 
 
 @Path("/product") 
-public class ProductServlet {
+public class ProductServlet_IT19135458 {
 	
-      Product productObj = new Product();
+	Product_IT19135458 productObj = new Product_IT19135458();
   
 @GET
 @Path("/") 

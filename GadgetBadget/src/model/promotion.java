@@ -157,7 +157,7 @@ public class promotion {
 	 }
 	 catch (Exception e)
 	 {
-	 output = "Error while deleting the research.";
+	 output = "Error while deleting the Promotion.";
 	 System.err.println(e.getMessage());
 	 }
 	 return output;

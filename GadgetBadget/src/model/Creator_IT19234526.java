@@ -1,7 +1,7 @@
 package model;
 import java.sql.*; 
 
-public class Creator {
+public class Creator_IT19234526 {
 
 	private Connection connect() 
 	 { 

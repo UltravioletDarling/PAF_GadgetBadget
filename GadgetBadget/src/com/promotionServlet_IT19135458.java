@@ -1,3 +1,4 @@
+package com;
 
 
 import javax.ws.rs.*; 
@@ -12,14 +13,14 @@ import com.google.gson.JsonParser;
 import model.promotion; 
 
 @Path("/promotion")
-public class promotionServlet {
+public class promotionServlet_IT19135458 {
 
 	promotion promotionObj = new promotion();
 	@GET
 	@Path("/") 
 	@Produces(MediaType.TEXT_HTML) 
 	public String readItems() 
-	 {     //testing
+	 {     
 	 return promotionObj.displaypromotion(); 
 	 } 
 

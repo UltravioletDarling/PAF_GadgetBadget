@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class Product {
+public class Product_IT19135458 {
 
 	private Connection connect() 
 	 { 
