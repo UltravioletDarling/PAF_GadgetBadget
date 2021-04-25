@@ -34,7 +34,7 @@ if (con == null)
 {return "Connection Error"; } 
 
 String query = " insert into product(`productid`,`name`,`price`,`availability`,`details`)"
-+ " values (?, ?, ?, ?, ?,?,?)"; 
++ " values (?, ?, ?, ?, ?)"; 
 PreparedStatement preparedStmt = con.prepareStatement(query); 
 
 preparedStmt.setInt(1, 0); 
